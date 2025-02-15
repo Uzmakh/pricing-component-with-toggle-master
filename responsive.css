@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+
+    .price-box.professional {
+        transform: scale(1.15);
+    }
+
+
+}

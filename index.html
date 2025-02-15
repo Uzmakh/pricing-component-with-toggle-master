@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Frontend Mentor | Pricing Component with Toggle</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Our Pricing</h1>
+      <div class="toggle-container">
+        <span> Annually</span>
+        <input type="checkbox" name="toggle" id="toggle" unchecked />
+        <label for="toggle">
+          <div class="ball"></div>
+        </label>
+        <span> Monthly</span>
+      </div>
+      <div class="card-container">
+        <!-- Box-1 -->
+        <div class="price-box">
+          <h4>Basic</h4>
+          <p>
+            <span class="monthly"> &dollar;19.99 </span>
+          </p>
+          <p>
+            <span class="annually"> &dollar;199.99 </span>
+          </p>
+          <ul>
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+        <!-- Box-2 -->
+        <div class="price-box professional">
+          <h4>Professional</h4>
+          <p>
+            <span class="monthly"> &dollar;24.99 </span>
+          </p>
+          <p>
+            <span class="annually"> &dollar;249.99 </span>
+          </p>
+          <ul>
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+        <!-- Box-3 -->
+        <div class="price-box">
+          <h4>Master</h4>
+          <p>
+            <span class="monthly"> &dollar;39.99 </span>
+          </p>
+          <p>
+            <span class="annually"> &dollar;399.99 </span>
+          </p>
+          <ul>
+            <li>2TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <!-- card-container -->
+    </div>
+    <!-- container -->
+    <!-- Footer-Note -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Uzma Khan</a>.
+    </div>
+
+    <!--custom js file -->
+    <script src="main.js"></script>
+  </body>
+</html>

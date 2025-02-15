@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+:root {
+    /* colors */
+    /* ###Primary */
+    --linear-gradient: linear-gradient(45deg,
+            hsl(236, 72%, 79%),
+            hsl(237, 63%, 64%));
+
+    /* ### Neutral */
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+    /* typography */
+    --ff-montserrat: "Montserrat", serif;
+    --ff-nunito: "Nunito", serif;
+
+    --fs-60: 6rem;
+    /* 15px*6rem = 90px */
+    --fs-40: 4rem;
+    /* 60px */
+    --fs-30: 3rem;
+    /* 45px */
+    --fs-24: 2.4rem;
+    /* 36px */
+    --fs-18: 1.8rem;
+    /* 27px */
+    --fs-14: 1.4rem;
+    /* 21px */
+    --fs-13: 1.3rem;
+    /* 19.5px */
+
+    --fw-700: 700;
+    /* spacing */
+    --spacing-block: 15px;
+    --padding-block: 50px;
+    /* Box-Shadow  */
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    /* Border-Radius */
+    /* Transition  */
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    /* 1rem=15px */
+}
+
+li {
+    list-style: none;
+    padding-block: var(--spacing-block);
+}
+
+/*-----------------------------------*\
+   Mobile-First Approach
+\*-----------------------------------*/
+body {
+    min-height: 100vh;
+    background-color: var(--very-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-montserrat);
+    font-weight: 700;
+}
+
+body::before {
+    content: "";
+    background-image: url("./images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0;
+    /* left: 150px; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    background-image: url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE - UTILITY CLASSES
+\*-----------------------------------*/
+
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    padding-block: var(--padding-block);
+    color: var(--dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container {
+    display: flex;
+
+    padding: var(--spacing-block);
+    align-items: center;
+    gap: 6px;
+}
+
+.toggle-container label {
+    background-image: var(--linear-gradient);
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    /* display: inline-block; */
+    position: relative;
+}
+
+.toggle-container label .ball {
+    background-color: var(--very-light-grayish-blue);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.toggle-container input {
+    display: none;
+}
+
+.toggle-container input:checked+label .ball {
+    transform: translateX(30px);
+}
+
+.card-container {
+    /* border: 2px solid red; */
+    max-width: 100%;
+    /* width: 360px; */
+    padding: 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-box {
+    background: var(--very-light-grayish-blue);
+    color: var(--grayish-blue);
+    max-width: 100%;
+    width: 300px;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+/* .monthly,
+.annually {
+    color: var(--dark-grayish-blue);
+} */
+
+.price-box .monthly {
+    display: none;
+}
+
+/* class added with JS */
+.toggling .price-box .monthly {
+    display: block;
+}
+
+.toggling .price-box .annually {
+    display: none;
+}
+
+.price-box p {
+    font-size: 40px;
+    line-height: 71px;
+}
+
+.price-box ul li {
+    border-top: 1px solid var(--light-grayish-blue);
+    font-size: 18px;
+}
+
+.price-box ul li:last-child {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.price-box button {
+    background-image: var(--linear-gradient);
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 22px;
+    border-radius: 5px;
+    color: var(--very-light-grayish-blue);
+    letter-spacing: 2px;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.price-box.professional {
+    background-image: var(--linear-gradient);
+    color: var(--very-light-grayish-blue);
+}
+
+.price-box.professional>* {
+    transform: scale(1);
+}
+
+.price-box.professional button {
+    background-image: none;
+    background-color: var(--very-light-grayish-blue);
+    color: var(--grayish-blue);
+}
+
+.price-box.professional button:hover {
+    background-image: var(--linear-gradient);
+    color: var(--very-light-grayish-blue);
+}
+
+.price-box button:hover {
+    background: transparent;
+    color: var(--grayish-blue);
+    outline: auto;
+}
+
+.price-box.professional button:hover {
+    background-image: var(--linear-gradient);
+    color: var(--very-light-grayish-blue);
+    outline: auto;
+}
+
+/* Footer-Note */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
