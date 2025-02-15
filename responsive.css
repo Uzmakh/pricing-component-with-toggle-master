@@ -1,3 +1,7 @@
+/*-----------------------------------*\
+  # For Tablet and Desktop screens
+\*-----------------------------------*/
+
 @media (min-width: 768px) {
     .card-container {
         flex-direction: row;
@@ -7,9 +11,9 @@
         transform: scale(1.15);
     }
 
-    body {
+    /* body {
         overflow-x: hidden;
-    }
+    } */
 
     body::before {
         content: "";
