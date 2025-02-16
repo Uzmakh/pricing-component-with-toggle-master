@@ -60,10 +60,10 @@ Users should be able to:
 
 **Toggling with JS**
 
-Project Documentation Framework
+<!-- Project Documentation Framework
 ├── Project Introduction (What it is, what problem it solves)
 ├── Quick Start (Get users up and running in 5 minutes)
 ├── Core Concepts (Key principles and terminology)
 ├── Detailed Guides (Scenario-based walkthroughs)
 ├── FAQ (Common pitfalls and solutions)
-└── Change Log (Version updates and changes)
+└── Change Log (Version updates and changes) -->
