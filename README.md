@@ -30,6 +30,15 @@ Users should be able to:
 
 ### Screenshot
 
+
+![pricing-component-with-toggle-mobile](https://github.com/user-attachments/assets/affa3cd8-b576-4f47-a084-d0f3eac6aed7)
+
+
+![pricing-comp-with-toggle-desktop](https://github.com/user-attachments/assets/2e77576d-b8c8-489c-b86a-d712266b0869)
+
+
+
+
 ### Links
 
 - Solution URL:https://www.frontendmentor.io/solutions/responsive-pricing-component-with-toggle-zY6iLSv-eF
