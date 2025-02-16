@@ -29,9 +29,14 @@ Users should be able to:
 - **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Screenshot
+
+
+![pricing-component-with-toggle-mobile](https://github.com/user-attachments/assets/affa3cd8-b576-4f47-a084-d0f3eac6aed7)
+
+
 ![pricing-comp-with-toggle-desktop](https://github.com/user-attachments/assets/2e77576d-b8c8-489c-b86a-d712266b0869)
 
-![pricing-component-with-toggle-mobile](https://github.com/user-attachments/assets/e5d15e2c-774a-4833-954a-59476457ab4c)
+
 
 
 ### Links
